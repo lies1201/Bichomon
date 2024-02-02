@@ -40,3 +40,10 @@ console.log(myNodelist);
 
 /* Cambia el fondo de todos los infocard-lg-data text-muted para todos los Pokimon 
     voladores itype flying*/
+
+    const fondo = document.querySelectorAll('.infocard-lg-data.text-muted .itype.flying');
+    for (let i = 0; i < fondo.length; i++) {
+        fondo[i].style = 'background-color: #BB8FCE';
+    }
+
+    //console.log(fondo);
