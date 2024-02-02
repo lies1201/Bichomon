@@ -13,11 +13,16 @@ color.style = 'background-color: #e3f5fd';
 
 //3-Imprime por consola la URL de la página.
 
-console.log("La URL d ela página es: "+window.location.href);
+const url=document.querySelector('a.header-logo').href;
+console.log("La URL de la página es: "+ url)
+
+console.log("La URL de la página local es: "+window.location.href);
+
 
 //4-Imprime por consola el dominio de la página.
 
-console.log("El dominio de la página es: "+window.location.hostname);
+console.log("El dominio de la página es: "+url.substring(8, url.lastIndexOf('/')));
+
 
 //5-Imprime todos los nodos de imagen.
 
@@ -46,4 +51,4 @@ console.log(myNodelist);
         fondo[i].style = 'background-color: #BB8FCE';
     }
 
-    //console.log(fondo);
+  
